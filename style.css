@@ -1,0 +1,53 @@
+body {
+  background-color: #3c5a14;
+}
+
+#loader-container {
+    width: 200px;
+    height: 200px;
+    color: beige;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #3c5a14;
+    border-radius: 50%;
+    animation: borderScale 1s infinite ease-in-out;
+    animation-duration: 1.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #loadingText {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+  }
+  
+
+@-webkit-keyframes borderScale {
+  0% {
+    border: 5px solid beige;
+  }
+  50% {
+    border: 25px solid #3c5a14;
+  }
+  100% {
+    border: 5px solid beige;
+  }
+}
+
+@keyframes borderScale {
+  0% {
+    border: 5px solid beige;
+  }
+  50% {
+    border: 25px solid #3c5a14;
+  }
+  100% {
+    border: 5px solid beige;
+  }
+}
